@@ -55,6 +55,17 @@ ELEVENLABS_VOICES = [
     ("pFZP5JQG7iQjIQuC4Bku", "Lily", "female", "british"),
     ("pNInz6obpgDQGcFmaJgB", "Adam", "male", "american"),
     ("pqHfZKP75CvOlQylNhV4", "Bill", "male", "american"),
+    # Custom cloned/account voices (added locally, not part of upstream ComfyUI) —
+    # (voice_id, display_name, gender, accent)
+    # wqYEydQOTCDXabZcTuzP (Instant Voice Clone from short samples) superseded
+    # 2026-09-06 -- lost accent + pacing, clone from limited audio couldn't hold
+    # onto either. Replaced by a proper Voice Design voice below.
+    # 97AjJLHRBEd7bxK2A3wj also superseded same day -- a re-run of the design
+    # call (Voice Design isn't deterministic) that produced a different voice
+    # than the one the user actually picked. CiEU7xqSY4lTz8jxOJhz below is the
+    # exact preview the user compared and chose.
+    ("CiEU7xqSY4lTz8jxOJhz", "Marie - Madelina Paradis (Voice Design)", "female", "west african"),
+    ("fLQhkOW7F9KVKAjYCbhr", "CiCi - Madelina Paradis interviewer", "female", "american"),
 ]
 
 ELEVENLABS_VOICE_OPTIONS = [f"{name} ({gender}, {accent})" for _, name, gender, accent in ELEVENLABS_VOICES]

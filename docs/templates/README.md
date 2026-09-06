@@ -1,3 +1,11 @@
+> **Note:** the live `Madelina.json`/`Madelina-Interviewer.json` workflows
+> have since moved past this frozen template — audio is now generated
+> in-canvas via ElevenLabs nodes (a script text box) instead of a static
+> `LoadAudio` file. See `../HOWTO-madelina-elevenlabs-voices.md` for that
+> current setup. This template is kept as-is for reference/rollback and
+> because the composite-wiring lesson below still applies to any future
+> `LoadAudio`-driven HeyGen workflow.
+
 # Frozen composite-input workflow templates
 
 Each `.json` here is a verified-working ComfyUI API-format workflow, kept
