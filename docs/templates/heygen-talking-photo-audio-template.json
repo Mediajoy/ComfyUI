@@ -1,0 +1,34 @@
+{
+  "2": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "REPLACE_ME_audio_filename.mp3"
+    }
+  },
+  "4": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "filename_prefix": "REPLACE_ME_client-slug/REPLACE_ME_output_name",
+      "format": "mp4",
+      "video": ["5", 0]
+    }
+  },
+  "5": {
+    "class_type": "HeyGenTalkingPhotoNode",
+    "inputs": {
+      "speech": "audio",
+      "resolution": "720p",
+      "aspect_ratio": "1:1",
+      "expressiveness": "low",
+      "seed": 42,
+      "image": ["6", 0],
+      "speech.audio": ["2", 0]
+    }
+  },
+  "6": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "REPLACE_ME_image_filename.jpg"
+    }
+  }
+}
